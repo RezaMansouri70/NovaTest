@@ -8,6 +8,6 @@ namespace ApplicationServices.Services.DopingService
 {
     public interface IDopingService
     {
-        Task<Response<List<DopingModel>>> GetList(Filter filter , CancellationToken cancellationToken);
+        Task<Response<List<DopingModel>>> GetList(Filter filter, CancellationToken cancellationToken);
     }
 }

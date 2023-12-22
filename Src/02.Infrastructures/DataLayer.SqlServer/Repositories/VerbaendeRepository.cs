@@ -1,5 +1,4 @@
 ﻿using DataLayer.SqlServer.Common;
-using DomainClass.Altersklassen;
 using DomainClass.Models;
 using DomainClass.Verbaende;
 
