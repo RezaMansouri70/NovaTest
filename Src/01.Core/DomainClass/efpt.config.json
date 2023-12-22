@@ -1,0 +1,61 @@
+﻿{
+   "CodeGenerationMode": 4,
+   "ContextClassName": "NOVATestContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "DomainClass",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[Altersklassen]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Gewichtsklassen]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Teilnehmer]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Verbaende]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Vereine]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "desktop-0kg8kne.NOVATest.dbo",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": true,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false
+}
