@@ -1,0 +1,11 @@
+﻿version: '3.4'
+
+services:
+  application.db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+
+  application.api:
+    image: ${DOCKER_REGISTRY-}api
+    build:
+      context: .
+      dockerfile: src/03.EndPoint/Api/Dockerfile
