@@ -8,5 +8,6 @@ namespace ApplicationServices.Model.Doping
 {
     public class DopingModel
     {
+        public string TeilnehmerName { get; set; }
     }
 }
