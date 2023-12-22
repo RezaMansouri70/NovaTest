@@ -6,13 +6,14 @@ using ApplicationServices.Model.Doping;
 using ApplicationServices.Services.DopingService;
 using DomainClass.Altersklassen;
 using DomainClass.Teilnehmer;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ApplicationServices.Services.Doping
 {
 
     public class DopingService : IDopingService
     {
-        private readonly IAltersklassenRepository _altersklassenRepository;
+        private readonly IAltersklassenRepository  _altersklassenRepository;
         private readonly ITeilnehmerRepository _teilnehmerRepository;
 
 
@@ -28,7 +29,7 @@ namespace ApplicationServices.Services.Doping
             {
                 // Select Randomly From Teilnehmer
                 var resultList = _teilnehmerRepository.GetQueryable().GroupBy(x => x.Verband)
-                    .Select(y => new DopingModel() { TeilnehmerName = y.First().Name, TeilnehmerVerband = y.First().Verband, TeilnehmerIstGewicht = y.First().IstGewicht }).OrderBy(r => Guid.NewGuid());
+                    .Select(y => new DopingModel() { TeilnehmerName = y.First().Name, TeilnehmerVerband = y.First().Verband , TeilnehmerIstGewicht = y.First().IstGewicht }).OrderBy(r => Guid.NewGuid());
 
                 // Pagination
                 var result = resultList.Skip((filter.PageIndex - 1) * filter.PageSize)

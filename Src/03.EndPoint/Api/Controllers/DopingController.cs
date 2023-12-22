@@ -1,5 +1,6 @@
 ﻿using Application.Models.General;
 using ApplicationServices.Services.DopingService;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
@@ -8,7 +9,7 @@ namespace Api.Controllers
     [ApiController]
     public class DopingController : ControllerBase
     {
-        private readonly IDopingService _dopingService;
+        private readonly IDopingService  _dopingService;
 
         public DopingController(IDopingService dopingService)
         {
@@ -16,9 +17,9 @@ namespace Api.Controllers
         }
 
         [HttpGet("GetDopingGetList")]
-        public async Task<IActionResult> GetDopingGetList([FromQuery] Filter filter, CancellationToken token)
+        public async Task<IActionResult> GetDopingGetList([FromQuery] Filter filter , CancellationToken token)
         {
-            return Ok(await _dopingService.GetList(filter, token));
+            return Ok(await _dopingService.GetList(filter ,token));
         }
     }
 }

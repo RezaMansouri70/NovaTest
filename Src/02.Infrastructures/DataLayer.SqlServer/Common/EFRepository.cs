@@ -24,7 +24,7 @@ namespace DataLayer.SqlServer.Common
             dbContext.SaveChanges();
         }
 
-
+   
         public IEnumerable<TEntity> GetAll()
         {
             return dbContext.Set<TEntity>().ToList();
